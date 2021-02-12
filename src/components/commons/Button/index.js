@@ -27,6 +27,7 @@ export const Button = styled.button`
         return ButtonDeafult;
     }}
 
+
     transition: opacity ${({ theme }) => theme.transition};
     border-radius: ${({ theme }) => theme.borderRadius};
 
