@@ -8,7 +8,7 @@ const ButtonGhost = css`
 
 const ButtonDeafult = css`
     color: white;
-    background-color: ${(props) => get(props.theme, `colors.${props.variant}.color`)};
+    background-color: ${({ theme, variant }) => get(theme, `colors.${variant}.color`)};
     color: ${(props) => get(props.theme, `colors.${props.variant}.contrastText`)};
 `;
 
@@ -21,7 +21,6 @@ export const Button = styled.button`
     border-radius: 8px;   
 
     ${function(props) {
-        console.log(props);
         if(props.ghost){
             return ButtonGhost;
         }
