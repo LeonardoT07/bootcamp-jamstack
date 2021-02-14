@@ -1,6 +1,6 @@
-import {typographyVariants} from './typographyVariants';
+import { typographyVariants } from './typographyVariants';
 
-const colors = {
+export const colors = {
   background: {
     light: {
       color: '#FFFFFF',
@@ -17,34 +17,43 @@ const colors = {
   primary: {
     main: {
       color: '#D7385E',
-      constrastText: '#FFFFFF',
+      contrastText: '#fff',
     },
   },
   secondary: {
     main: {
       color: '#FB7B6B',
-      constrastText: '#FFFFFF',
+      contrastText: '#fff',
     },
   },
   tertiary: {
     main: {
       color: '#070C0E',
-      constrastText: '#FFFFFF',
+      contrastText: '#fff',
     },
     light: {
       color: '#88989E',
-      constrastText: '#FFFFFF',
+      contrastText: '#fff',
     },
   },
   modes: {
     dark: {},
-  }
+  },
+};
+
+export const breakpoints = {
+  xs: 0,
+  sm: 480,
+  md: 768,
+  lg: 992,
+  xl: 1200,
 };
 
 export default {
   colors,
   typographyVariants,
-  borderRadius: '8px',
-  fontFamily: '\'Rubik\', sans-serif',
+  breakpoints,
+  borderRadius: '12px',
   transition: '200ms ease-in-out',
-}
+  fontFamily: '\'Rubik\', sans-serif',
+};
