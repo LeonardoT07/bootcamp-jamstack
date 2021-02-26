@@ -1,9 +1,7 @@
-/* eslint-disable func-names */
-/* eslint-disable import/prefer-default-export */
 import { breakpointsMedia } from './breakpointsMedia';
 
 export function propToStyle(propName) {
-  return function (props) {
+  return (props) => {
     const propValue = props[propName];
 
     if (typeof propValue === 'string' || typeof propValue === 'number') {
