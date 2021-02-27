@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { createGlobalStyle, css } from 'styled-components';
-import styled, { css } from 'styled-components';
 import { motion } from 'framer-motion';
 
 const ModalWrapper = styled.div`
@@ -53,7 +52,6 @@ function Modal({ isOpen, onClose, children }) {
     >
       {isOpen && <LockScroll />}
 
-
       <motion.div
         variants={{
           open: {
@@ -61,7 +59,6 @@ function Modal({ isOpen, onClose, children }) {
           },
           closed: {
             x: '100%',
-            x: '-100%',
           },
         }}
         animate={isOpen ? 'open' : 'closed'}
