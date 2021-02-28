@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "export": "next build && next export",
+    "start": "next start",
+    "lint": "eslint --ignore-path .gitignore ."
   },
   "dependencies": {
     "framer-motion": "^3.7.0",
@@ -15,6 +17,7 @@
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
     "react-lottie": "^1.2.3",
+    "shelljs": "^0.8.4",
     "styled-components": "^5.0.0",
     "styled-normalize": "^8.0.7"
   },

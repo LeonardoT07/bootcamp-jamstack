@@ -65,6 +65,7 @@ function FormContent() {
           // eslint-disable-next-line no-console
           .then((respostaConvertidaEmObjeto) => {
             setSubmissionStatus(formStates.DONE);
+            // eslint-disable-next-line no-console
             console.log(respostaConvertidaEmObjeto);
           })
           .catch((error) => {
