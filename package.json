@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "framer-motion": "^3.7.0",
+    "husky": "^5.1.1",
     "lodash": "^4.17.20",
     "next": "latest",
     "prop-types": "^15.7.2",
@@ -30,6 +31,11 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslit": "^6.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
   },
   "license": "MIT"
 }
