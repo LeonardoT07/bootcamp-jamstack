@@ -93,6 +93,7 @@ export default function Home() {
               variant="primary.main"
               onClick={() => {
                 // isModalOpen = true;
+                // eslint-disable-next-line no-console
                 console.log('isModalOpen', isModalOpen);
                 setModalState(!isModalOpen); // novo state sendo atribuido
               }}
