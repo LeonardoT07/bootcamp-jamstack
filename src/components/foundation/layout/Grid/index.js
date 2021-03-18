@@ -9,6 +9,7 @@ const Container = styled.div`
     margin-right: auto;
     margin-left: auto;
     max-width: initial;
+
     ${breakpointsMedia({
     sm: css`
       max-width: 576px; 
@@ -25,6 +26,7 @@ const Container = styled.div`
       max-width: 1222px;
     `,
   })}
+
   ${propToStyle('marginTop')}
 `;
 
@@ -36,9 +38,12 @@ export const Grid = {
     margin-right: -16px;
     margin-left: -16px;
     ${propToStyle('flex')}
+    ${propToStyle('marginTop')}
     ${propToStyle('marginLeft')}
     ${propToStyle('marginRight')}
     ${propToStyle('justifyContent')}
+    ${propToStyle('marginBottom')}
+    ${propToStyle('flexDirection')}
   `,
   Col: styled.div`
     padding-right: 16px;
@@ -46,6 +51,8 @@ export const Grid = {
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
+
+
     ${({ value }) => {
     if (typeof value === 'number') {
       return css`
@@ -55,6 +62,7 @@ export const Grid = {
           max-width: ${(100 * value) / 12}%;
         `;
     }
+
     return breakpointsMedia({
       xs: value?.xs
         ? css`
@@ -98,12 +106,15 @@ export const Grid = {
         : '',
     });
   }}
+
+
     ${({ offset }) => {
     if (typeof offset === 'number') {
       return css`
           margin-left: ${(100 * offset) / 12}%;
         `;
     }
+
     return breakpointsMedia({
       xs: offset?.xs
         ? css`
@@ -132,10 +143,12 @@ export const Grid = {
         : '',
     });
   }}
+
     ${propToStyle('display')}
     ${propToStyle('alignItems')}
     ${propToStyle('justifyContent')}
     ${propToStyle('flexDirection')}
     ${propToStyle('paddingRight')}
+    ${propToStyle('order')}
   `,
 };
