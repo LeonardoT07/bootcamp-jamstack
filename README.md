@@ -1,9 +1,3 @@
-# Atividades
-- Novo produto na loja VOLL
-- Integração de Cancelamento do Clube VOLL
-- 10 Todo Dia
-
-
 # Instalura :camera_flash:
 Este projeto está sendo desenvolvido durante o Bootcamp Front-end JAMstack da Alura. O projeto consiste em uma "réplica" do Instagram, aprendendo a desenvolver um projeto integrado e escalável, com as melhores práticas e as as práticas mais recentes que o mercado está abordando no momento.
 
