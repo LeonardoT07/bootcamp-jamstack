@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "framer-motion": "^3.7.0",
-    "husky": "^5.1.1",
+    "husky": "^8.0.2",
     "lodash": "^4.17.20",
     "next": "latest",
     "prop-types": "^15.7.2",
